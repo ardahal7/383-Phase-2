@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--First horizontal is for the search bar-->
+    <TextView
+        android:text="Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textSearchText"
+        android:paddingLeft="5dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:gravity="center"
+        android:layout_marginBottom="0.0dp"
+        android:textStyle="bold"
+        android:textColor="#37dfe5"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:id="@+id/editSearchName"
+        android:textAppearance="@android:style/TextAppearance.Material.Body2"
+        android:hint="Search For Summoner Name"
+        android:textSize="14sp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="6dp"
+        android:shadowColor="#000000"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
+    <Button
+        android:text="Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSearchButton"
+        android:textAppearance="@android:style/TextAppearance.Material.Body2"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp" />
+    <ListView
+       android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutListView"
+        android:background="#000000" 
+      />
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:id="@+id/textGameId"
+        android:textSize="14sp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="6dp"
+        android:shadowColor="#000000"
+        android:textColor="#000000" />
+  
+</LinearLayout>
